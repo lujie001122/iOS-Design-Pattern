@@ -66,8 +66,9 @@
 -(void)prototypePattern{
     Germ *germ = [[Germ alloc]init];
     germ.name = @"类型1";
+    germ.object = [NSObject new];
     Germ *germ2 = [germ copy];
-    NSLog(@"germ:%@--germ1:%@",germ,germ2);
+    NSLog(@"germ:%@--germ1:%@  object1:%@---object2%@",germ,germ2,germ.object,germ2.object);
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

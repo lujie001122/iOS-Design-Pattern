@@ -12,6 +12,7 @@
 -(id)copyWithZone:(NSZone *)zone{
     Germ *germ = [[Germ alloc]init];
     germ.name = self.name;
+    germ.object = self.object;
     return germ;
 }
 @end

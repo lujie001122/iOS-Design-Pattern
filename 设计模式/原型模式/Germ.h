@@ -10,4 +10,5 @@
 
 @interface Germ : NSObject<NSCopying>
 @property (nonatomic, strong)NSString *name;
+@property (nonatomic, strong)NSObject *object;
 @end
