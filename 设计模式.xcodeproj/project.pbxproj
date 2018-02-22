@@ -17,6 +17,9 @@
 		E993A3C520302B8E007F0490 /* ShapeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E993A3BE20302B6C007F0490 /* ShapeManager.m */; };
 		E993A3C620302B8E007F0490 /* Square.m in Sources */ = {isa = PBXBuildFile; fileRef = E993A3BF20302B6C007F0490 /* Square.m */; };
 		E993A3C720302B8E007F0490 /* Germ.m in Sources */ = {isa = PBXBuildFile; fileRef = E993A3C320302B74007F0490 /* Germ.m */; };
+		E9B33C00203E9CB600831BF9 /* SUV.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B33BFF203E9CB600831BF9 /* SUV.m */; };
+		E9B33C03203E9CF400831BF9 /* Bus.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B33C02203E9CF400831BF9 /* Bus.m */; };
+		E9B33C06203E9D3F00831BF9 /* CarFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B33C05203E9D3F00831BF9 /* CarFactory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +42,13 @@
 		E993A3C120302B6C007F0490 /* ShapeManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShapeManager.h; sourceTree = "<group>"; };
 		E993A3C220302B74007F0490 /* Germ.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Germ.h; sourceTree = "<group>"; };
 		E993A3C320302B74007F0490 /* Germ.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Germ.m; sourceTree = "<group>"; };
+		E9B33BFD203E9C9600831BF9 /* Car.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
+		E9B33BFE203E9CB600831BF9 /* SUV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SUV.h; sourceTree = "<group>"; };
+		E9B33BFF203E9CB600831BF9 /* SUV.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SUV.m; sourceTree = "<group>"; };
+		E9B33C01203E9CF400831BF9 /* Bus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bus.h; sourceTree = "<group>"; };
+		E9B33C02203E9CF400831BF9 /* Bus.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Bus.m; sourceTree = "<group>"; };
+		E9B33C04203E9D3F00831BF9 /* CarFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CarFactory.h; sourceTree = "<group>"; };
+		E9B33C05203E9D3F00831BF9 /* CarFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CarFactory.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +81,7 @@
 		E993A38320301B6C007F0490 /* 设计模式 */ = {
 			isa = PBXGroup;
 			children = (
+				E9B33BFB203E996A00831BF9 /* 工厂模式 */,
 				E993A3B020302B13007F0490 /* 外观模式 */,
 				E993A3B820302B14007F0490 /* 原型模式 */,
 				E993A38420301B6C007F0490 /* AppDelegate.h */,
@@ -107,6 +118,20 @@
 				E993A3C320302B74007F0490 /* Germ.m */,
 			);
 			path = "原型模式";
+			sourceTree = "<group>";
+		};
+		E9B33BFB203E996A00831BF9 /* 工厂模式 */ = {
+			isa = PBXGroup;
+			children = (
+				E9B33BFD203E9C9600831BF9 /* Car.h */,
+				E9B33BFE203E9CB600831BF9 /* SUV.h */,
+				E9B33BFF203E9CB600831BF9 /* SUV.m */,
+				E9B33C01203E9CF400831BF9 /* Bus.h */,
+				E9B33C02203E9CF400831BF9 /* Bus.m */,
+				E9B33C04203E9D3F00831BF9 /* CarFactory.h */,
+				E9B33C05203E9D3F00831BF9 /* CarFactory.m */,
+			);
+			path = "工厂模式";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,6 +211,9 @@
 				E993A3C720302B8E007F0490 /* Germ.m in Sources */,
 				E993A38920301B6C007F0490 /* ViewController.m in Sources */,
 				E993A39420301B6C007F0490 /* main.m in Sources */,
+				E9B33C03203E9CF400831BF9 /* Bus.m in Sources */,
+				E9B33C06203E9D3F00831BF9 /* CarFactory.m in Sources */,
+				E9B33C00203E9CB600831BF9 /* SUV.m in Sources */,
 				E993A38620301B6C007F0490 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -10,6 +10,7 @@
 
 #import "ShapeManager.h"
 #import "Germ.h"
+#import "CarFactory.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic, strong)UITableView *tableView;
@@ -27,7 +28,8 @@
     [self.view addSubview:_tableView];
     [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"Cell"];
     _dataArray = @[@"外观设计模式",
-                   @"原型设计模式"
+                   @"原型设计模式",
+                   @"工厂模式"
                    ];
 }
 //数据源方法
@@ -56,6 +58,8 @@
         [self facadePattern];
     } else if([@"原型设计模式" isEqualToString:_dataArray[indexPath.row]]){
         [self prototypePattern];
+    }else if ([@"工厂模式" isEqualToString:_dataArray[indexPath.row]]){
+        [self factoryPattern];
     }
 }
 - (void)facadePattern{
@@ -69,6 +73,10 @@
     germ.object = [NSObject new];
     Germ *germ2 = [germ copy];
     NSLog(@"germ:%@--germ1:%@  object1:%@---object2%@",germ,germ2,germ.object,germ2.object);
+}
+-(void)factoryPattern{
+    [CarFactory carRunWithType:1];
+    [CarFactory carRunWithType:2];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
