@@ -20,6 +20,10 @@
 		E9B33C00203E9CB600831BF9 /* SUV.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B33BFF203E9CB600831BF9 /* SUV.m */; };
 		E9B33C03203E9CF400831BF9 /* Bus.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B33C02203E9CF400831BF9 /* Bus.m */; };
 		E9B33C06203E9D3F00831BF9 /* CarFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B33C05203E9D3F00831BF9 /* CarFactory.m */; };
+		E9B33C0B203EA31F00831BF9 /* Red.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B33C0A203EA31F00831BF9 /* Red.m */; };
+		E9B33C0E203EA35E00831BF9 /* Blue.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B33C0D203EA35E00831BF9 /* Blue.m */; };
+		E9B33C11203EA3AF00831BF9 /* ColorFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B33C10203EA3AF00831BF9 /* ColorFactory.m */; };
+		E9B33C14203EA42300831BF9 /* AbstractFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B33C13203EA42300831BF9 /* AbstractFactory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +53,15 @@
 		E9B33C02203E9CF400831BF9 /* Bus.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Bus.m; sourceTree = "<group>"; };
 		E9B33C04203E9D3F00831BF9 /* CarFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CarFactory.h; sourceTree = "<group>"; };
 		E9B33C05203E9D3F00831BF9 /* CarFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CarFactory.m; sourceTree = "<group>"; };
+		E9B33C08203EA30700831BF9 /* Color.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Color.h; sourceTree = "<group>"; };
+		E9B33C09203EA31F00831BF9 /* Red.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Red.h; sourceTree = "<group>"; };
+		E9B33C0A203EA31F00831BF9 /* Red.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Red.m; sourceTree = "<group>"; };
+		E9B33C0C203EA35E00831BF9 /* Blue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Blue.h; sourceTree = "<group>"; };
+		E9B33C0D203EA35E00831BF9 /* Blue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Blue.m; sourceTree = "<group>"; };
+		E9B33C0F203EA3AF00831BF9 /* ColorFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorFactory.h; sourceTree = "<group>"; };
+		E9B33C10203EA3AF00831BF9 /* ColorFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColorFactory.m; sourceTree = "<group>"; };
+		E9B33C12203EA42300831BF9 /* AbstractFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AbstractFactory.h; sourceTree = "<group>"; };
+		E9B33C13203EA42300831BF9 /* AbstractFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AbstractFactory.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +94,7 @@
 		E993A38320301B6C007F0490 /* 设计模式 */ = {
 			isa = PBXGroup;
 			children = (
+				E9B33C07203EA2ED00831BF9 /* 抽象工厂模式 */,
 				E9B33BFB203E996A00831BF9 /* 工厂模式 */,
 				E993A3B020302B13007F0490 /* 外观模式 */,
 				E993A3B820302B14007F0490 /* 原型模式 */,
@@ -132,6 +146,22 @@
 				E9B33C05203E9D3F00831BF9 /* CarFactory.m */,
 			);
 			path = "工厂模式";
+			sourceTree = "<group>";
+		};
+		E9B33C07203EA2ED00831BF9 /* 抽象工厂模式 */ = {
+			isa = PBXGroup;
+			children = (
+				E9B33C08203EA30700831BF9 /* Color.h */,
+				E9B33C09203EA31F00831BF9 /* Red.h */,
+				E9B33C0A203EA31F00831BF9 /* Red.m */,
+				E9B33C0C203EA35E00831BF9 /* Blue.h */,
+				E9B33C0D203EA35E00831BF9 /* Blue.m */,
+				E9B33C0F203EA3AF00831BF9 /* ColorFactory.h */,
+				E9B33C10203EA3AF00831BF9 /* ColorFactory.m */,
+				E9B33C12203EA42300831BF9 /* AbstractFactory.h */,
+				E9B33C13203EA42300831BF9 /* AbstractFactory.m */,
+			);
+			path = "抽象工厂模式";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,9 +235,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9B33C0B203EA31F00831BF9 /* Red.m in Sources */,
+				E9B33C0E203EA35E00831BF9 /* Blue.m in Sources */,
+				E9B33C14203EA42300831BF9 /* AbstractFactory.m in Sources */,
 				E993A3C420302B8E007F0490 /* Circle.m in Sources */,
 				E993A3C520302B8E007F0490 /* ShapeManager.m in Sources */,
 				E993A3C620302B8E007F0490 /* Square.m in Sources */,
+				E9B33C11203EA3AF00831BF9 /* ColorFactory.m in Sources */,
 				E993A3C720302B8E007F0490 /* Germ.m in Sources */,
 				E993A38920301B6C007F0490 /* ViewController.m in Sources */,
 				E993A39420301B6C007F0490 /* main.m in Sources */,

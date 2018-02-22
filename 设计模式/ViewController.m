@@ -11,6 +11,8 @@
 #import "ShapeManager.h"
 #import "Germ.h"
 #import "CarFactory.h"
+#import "AbstractFactory.h"
+#import "ColorFactory.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic, strong)UITableView *tableView;
@@ -29,7 +31,8 @@
     [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"Cell"];
     _dataArray = @[@"外观设计模式",
                    @"原型设计模式",
-                   @"工厂模式"
+                   @"工厂模式",
+                   @"抽象工厂模式"
                    ];
 }
 //数据源方法
@@ -60,6 +63,8 @@
         [self prototypePattern];
     }else if ([@"工厂模式" isEqualToString:_dataArray[indexPath.row]]){
         [self factoryPattern];
+    }else if ([@"抽象工厂模式" isEqualToString:_dataArray[indexPath.row]]){
+        [self AbstractFactoryPattern];
     }
 }
 - (void)facadePattern{
@@ -75,8 +80,28 @@
     NSLog(@"germ:%@--germ1:%@  object1:%@---object2%@",germ,germ2,germ.object,germ2.object);
 }
 -(void)factoryPattern{
-    [CarFactory carRunWithType:1];
-    [CarFactory carRunWithType:2];
+    CarFactory *carFactory = [CarFactory new];
+    NSObject *suv = [carFactory carRunWithType:1];
+    [suv performSelector:@selector(run)];
+    
+    NSObject *bus = [carFactory carRunWithType:2];
+    [bus performSelector:@selector(run)];
+}
+-(void)AbstractFactoryPattern{
+    CarFactory *carFactory = (CarFactory *)[AbstractFactory getFactoryWithType:1];
+    NSObject *suv = [carFactory carRunWithType:1];
+    [suv performSelector:@selector(run)];
+    
+    NSObject *bus = [carFactory carRunWithType:2];
+    [bus performSelector:@selector(run)];
+    
+    //创建Color Factory
+    ColorFactory *colorFactory = (ColorFactory *)[AbstractFactory getFactoryWithType:2];
+    NSObject *red = [colorFactory colorFillWithType:1];
+    [red performSelector:@selector(fill)];
+    
+    NSObject *blue = [colorFactory colorFillWithType:2];
+    [blue performSelector:@selector(fill)];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

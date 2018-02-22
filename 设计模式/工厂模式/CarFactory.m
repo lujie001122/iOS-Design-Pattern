@@ -11,14 +11,14 @@
 #import "Bus.h"
 
 @implementation CarFactory
-+(void)carRunWithType:(int)type{
+-(NSObject *)carRunWithType:(int)type{
     if (type == 1) {
         SUV* suv = [SUV new];
-        [suv run];
+        return suv;
     }else if (type == 2){
         Bus* bus = [Bus new];
-        [bus run];
+        return bus;
     }
-    return;
+    return nil;
 }
 @end

@@ -1,5 +1,5 @@
 //
-//  CarFactory.h
+//  Color.h
 //  设计模式
 //
 //  Created by 卢杰 on 2018/2/22.
@@ -8,8 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@interface CarFactory : NSObject
-
--(NSObject *)carRunWithType:(int)type;
-
+@protocol Color <NSObject>
+-(void)fill;
 @end
