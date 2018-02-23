@@ -24,6 +24,17 @@
 		E9B33C0E203EA35E00831BF9 /* Blue.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B33C0D203EA35E00831BF9 /* Blue.m */; };
 		E9B33C11203EA3AF00831BF9 /* ColorFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B33C10203EA3AF00831BF9 /* ColorFactory.m */; };
 		E9B33C14203EA42300831BF9 /* AbstractFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B33C13203EA42300831BF9 /* AbstractFactory.m */; };
+		E9B33C1A203FAF1E00831BF9 /* Wrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B33C19203FAF1E00831BF9 /* Wrapper.m */; };
+		E9B33C1D203FB00500831BF9 /* Bottle.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B33C1C203FB00500831BF9 /* Bottle.m */; };
+		E9B33C20203FB05300831BF9 /* Burger.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B33C1F203FB05300831BF9 /* Burger.m */; };
+		E9B33C25203FB2C300831BF9 /* ColdDrink.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B33C24203FB2C300831BF9 /* ColdDrink.m */; };
+		E9B33C28203FB33D00831BF9 /* VegBurger.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B33C27203FB33D00831BF9 /* VegBurger.m */; };
+		E9B33C2B203FB36E00831BF9 /* ChickenBurger.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B33C2A203FB36E00831BF9 /* ChickenBurger.m */; };
+		E9B33C2E203FB39B00831BF9 /* Coke.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B33C2D203FB39B00831BF9 /* Coke.m */; };
+		E9B33C31203FB3B300831BF9 /* Pepsi.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B33C30203FB3B300831BF9 /* Pepsi.m */; };
+		E9B33C34203FB3F800831BF9 /* Meal.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B33C33203FB3F800831BF9 /* Meal.m */; };
+		E9B33C37203FB5E100831BF9 /* ItemBase.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B33C36203FB5E100831BF9 /* ItemBase.m */; };
+		E9B33C3A203FB81900831BF9 /* MealBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B33C39203FB81900831BF9 /* MealBuilder.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +73,30 @@
 		E9B33C10203EA3AF00831BF9 /* ColorFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColorFactory.m; sourceTree = "<group>"; };
 		E9B33C12203EA42300831BF9 /* AbstractFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AbstractFactory.h; sourceTree = "<group>"; };
 		E9B33C13203EA42300831BF9 /* AbstractFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AbstractFactory.m; sourceTree = "<group>"; };
+		E9B33C16203FAE2800831BF9 /* Item.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
+		E9B33C17203FAEFC00831BF9 /* Packing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Packing.h; sourceTree = "<group>"; };
+		E9B33C18203FAF1E00831BF9 /* Wrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Wrapper.h; sourceTree = "<group>"; };
+		E9B33C19203FAF1E00831BF9 /* Wrapper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Wrapper.m; sourceTree = "<group>"; };
+		E9B33C1B203FB00500831BF9 /* Bottle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bottle.h; sourceTree = "<group>"; };
+		E9B33C1C203FB00500831BF9 /* Bottle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Bottle.m; sourceTree = "<group>"; };
+		E9B33C1E203FB05300831BF9 /* Burger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Burger.h; sourceTree = "<group>"; };
+		E9B33C1F203FB05300831BF9 /* Burger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Burger.m; sourceTree = "<group>"; };
+		E9B33C23203FB2C300831BF9 /* ColdDrink.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColdDrink.h; sourceTree = "<group>"; };
+		E9B33C24203FB2C300831BF9 /* ColdDrink.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColdDrink.m; sourceTree = "<group>"; };
+		E9B33C26203FB33D00831BF9 /* VegBurger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VegBurger.h; sourceTree = "<group>"; };
+		E9B33C27203FB33D00831BF9 /* VegBurger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VegBurger.m; sourceTree = "<group>"; };
+		E9B33C29203FB36E00831BF9 /* ChickenBurger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChickenBurger.h; sourceTree = "<group>"; };
+		E9B33C2A203FB36E00831BF9 /* ChickenBurger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChickenBurger.m; sourceTree = "<group>"; };
+		E9B33C2C203FB39B00831BF9 /* Coke.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Coke.h; sourceTree = "<group>"; };
+		E9B33C2D203FB39B00831BF9 /* Coke.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Coke.m; sourceTree = "<group>"; };
+		E9B33C2F203FB3B300831BF9 /* Pepsi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pepsi.h; sourceTree = "<group>"; };
+		E9B33C30203FB3B300831BF9 /* Pepsi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Pepsi.m; sourceTree = "<group>"; };
+		E9B33C32203FB3F800831BF9 /* Meal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Meal.h; sourceTree = "<group>"; };
+		E9B33C33203FB3F800831BF9 /* Meal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Meal.m; sourceTree = "<group>"; };
+		E9B33C35203FB5E100831BF9 /* ItemBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ItemBase.h; sourceTree = "<group>"; };
+		E9B33C36203FB5E100831BF9 /* ItemBase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ItemBase.m; sourceTree = "<group>"; };
+		E9B33C38203FB81900831BF9 /* MealBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MealBuilder.h; sourceTree = "<group>"; };
+		E9B33C39203FB81900831BF9 /* MealBuilder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MealBuilder.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +129,7 @@
 		E993A38320301B6C007F0490 /* 设计模式 */ = {
 			isa = PBXGroup;
 			children = (
+				E9B33C15203FADFF00831BF9 /* 建造者模式 */,
 				E9B33C07203EA2ED00831BF9 /* 抽象工厂模式 */,
 				E9B33BFB203E996A00831BF9 /* 工厂模式 */,
 				E993A3B020302B13007F0490 /* 外观模式 */,
@@ -162,6 +198,37 @@
 				E9B33C13203EA42300831BF9 /* AbstractFactory.m */,
 			);
 			path = "抽象工厂模式";
+			sourceTree = "<group>";
+		};
+		E9B33C15203FADFF00831BF9 /* 建造者模式 */ = {
+			isa = PBXGroup;
+			children = (
+				E9B33C16203FAE2800831BF9 /* Item.h */,
+				E9B33C35203FB5E100831BF9 /* ItemBase.h */,
+				E9B33C36203FB5E100831BF9 /* ItemBase.m */,
+				E9B33C17203FAEFC00831BF9 /* Packing.h */,
+				E9B33C18203FAF1E00831BF9 /* Wrapper.h */,
+				E9B33C19203FAF1E00831BF9 /* Wrapper.m */,
+				E9B33C1B203FB00500831BF9 /* Bottle.h */,
+				E9B33C1C203FB00500831BF9 /* Bottle.m */,
+				E9B33C1E203FB05300831BF9 /* Burger.h */,
+				E9B33C1F203FB05300831BF9 /* Burger.m */,
+				E9B33C23203FB2C300831BF9 /* ColdDrink.h */,
+				E9B33C24203FB2C300831BF9 /* ColdDrink.m */,
+				E9B33C26203FB33D00831BF9 /* VegBurger.h */,
+				E9B33C27203FB33D00831BF9 /* VegBurger.m */,
+				E9B33C29203FB36E00831BF9 /* ChickenBurger.h */,
+				E9B33C2A203FB36E00831BF9 /* ChickenBurger.m */,
+				E9B33C2C203FB39B00831BF9 /* Coke.h */,
+				E9B33C2D203FB39B00831BF9 /* Coke.m */,
+				E9B33C2F203FB3B300831BF9 /* Pepsi.h */,
+				E9B33C30203FB3B300831BF9 /* Pepsi.m */,
+				E9B33C32203FB3F800831BF9 /* Meal.h */,
+				E9B33C33203FB3F800831BF9 /* Meal.m */,
+				E9B33C38203FB81900831BF9 /* MealBuilder.h */,
+				E9B33C39203FB81900831BF9 /* MealBuilder.m */,
+			);
+			path = "建造者模式";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,18 +304,29 @@
 			files = (
 				E9B33C0B203EA31F00831BF9 /* Red.m in Sources */,
 				E9B33C0E203EA35E00831BF9 /* Blue.m in Sources */,
+				E9B33C1A203FAF1E00831BF9 /* Wrapper.m in Sources */,
 				E9B33C14203EA42300831BF9 /* AbstractFactory.m in Sources */,
 				E993A3C420302B8E007F0490 /* Circle.m in Sources */,
 				E993A3C520302B8E007F0490 /* ShapeManager.m in Sources */,
 				E993A3C620302B8E007F0490 /* Square.m in Sources */,
+				E9B33C28203FB33D00831BF9 /* VegBurger.m in Sources */,
 				E9B33C11203EA3AF00831BF9 /* ColorFactory.m in Sources */,
 				E993A3C720302B8E007F0490 /* Germ.m in Sources */,
+				E9B33C2B203FB36E00831BF9 /* ChickenBurger.m in Sources */,
 				E993A38920301B6C007F0490 /* ViewController.m in Sources */,
 				E993A39420301B6C007F0490 /* main.m in Sources */,
+				E9B33C2E203FB39B00831BF9 /* Coke.m in Sources */,
 				E9B33C03203E9CF400831BF9 /* Bus.m in Sources */,
+				E9B33C31203FB3B300831BF9 /* Pepsi.m in Sources */,
+				E9B33C3A203FB81900831BF9 /* MealBuilder.m in Sources */,
 				E9B33C06203E9D3F00831BF9 /* CarFactory.m in Sources */,
+				E9B33C34203FB3F800831BF9 /* Meal.m in Sources */,
+				E9B33C1D203FB00500831BF9 /* Bottle.m in Sources */,
+				E9B33C25203FB2C300831BF9 /* ColdDrink.m in Sources */,
+				E9B33C20203FB05300831BF9 /* Burger.m in Sources */,
 				E9B33C00203E9CB600831BF9 /* SUV.m in Sources */,
 				E993A38620301B6C007F0490 /* AppDelegate.m in Sources */,
+				E9B33C37203FB5E100831BF9 /* ItemBase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

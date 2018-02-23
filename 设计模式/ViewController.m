@@ -13,6 +13,8 @@
 #import "CarFactory.h"
 #import "AbstractFactory.h"
 #import "ColorFactory.h"
+#import "MealBuilder.h"
+#import "Meal.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic, strong)UITableView *tableView;
@@ -32,7 +34,8 @@
     _dataArray = @[@"外观设计模式",
                    @"原型设计模式",
                    @"工厂模式",
-                   @"抽象工厂模式"
+                   @"抽象工厂模式",
+                   @"建造者模式"
                    ];
 }
 //数据源方法
@@ -65,6 +68,8 @@
         [self factoryPattern];
     }else if ([@"抽象工厂模式" isEqualToString:_dataArray[indexPath.row]]){
         [self AbstractFactoryPattern];
+    }else if ([@"建造者模式" isEqualToString:_dataArray[indexPath.row]]){
+        [self BuilderPattern];
     }
 }
 - (void)facadePattern{
@@ -102,6 +107,18 @@
     
     NSObject *blue = [colorFactory colorFillWithType:2];
     [blue performSelector:@selector(fill)];
+}
+-(void)BuilderPattern{
+    MealBuilder* mealBuilder = [MealBuilder new];
+    Meal *velMeal = [mealBuilder prepareVegMeal];
+    NSLog(@"VegMeal");
+    [velMeal showItems];
+    NSLog(@"Total Cost:%f",[velMeal getCost]);
+    
+    Meal *nonVegMeal = [mealBuilder prepareNonVegMeal];
+    NSLog(@"nonVegMeal");
+    [nonVegMeal showItems];
+    NSLog(@"Total Cost:%f",[nonVegMeal getCost]);
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
