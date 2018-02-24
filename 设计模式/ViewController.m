@@ -15,6 +15,7 @@
 #import "ColorFactory.h"
 #import "MealBuilder.h"
 #import "Meal.h"
+#import "AudioPlayer.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic, strong)UITableView *tableView;
@@ -35,7 +36,8 @@
                    @"原型设计模式",
                    @"工厂模式",
                    @"抽象工厂模式",
-                   @"建造者模式"
+                   @"建造者模式",
+                   @"适配器模式"
                    ];
 }
 //数据源方法
@@ -70,6 +72,8 @@
         [self AbstractFactoryPattern];
     }else if ([@"建造者模式" isEqualToString:_dataArray[indexPath.row]]){
         [self BuilderPattern];
+    }else if ([@"适配器模式" isEqualToString:_dataArray[indexPath.row]]){
+        [self AdapterPattern];
     }
 }
 - (void)facadePattern{
@@ -119,6 +123,12 @@
     NSLog(@"nonVegMeal");
     [nonVegMeal showItems];
     NSLog(@"Total Cost:%f",[nonVegMeal getCost]);
+}
+-(void)AdapterPattern{
+    [AudioPlayer playWithName:@"beyond the horizon.mp3" andType:@"mp3"];
+    [AudioPlayer playWithName:@"alone.mp4" andType:@"mp4"];
+    [AudioPlayer playWithName:@"far far away.vlc" andType:@"vlc"];
+    [AudioPlayer playWithName:@"mind me.avi" andType:@"avi"];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

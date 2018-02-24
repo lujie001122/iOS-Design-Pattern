@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E96642C420413B7C0000ADF6 /* VlcPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = E96642C320413B7C0000ADF6 /* VlcPlayer.m */; };
+		E96642C720413BD90000ADF6 /* Mp4Player.m in Sources */ = {isa = PBXBuildFile; fileRef = E96642C620413BD90000ADF6 /* Mp4Player.m */; };
+		E96642CA20413C260000ADF6 /* MediaAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = E96642C920413C260000ADF6 /* MediaAdapter.m */; };
+		E96642CD2041407D0000ADF6 /* AudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = E96642CC2041407D0000ADF6 /* AudioPlayer.m */; };
 		E993A38620301B6C007F0490 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E993A38520301B6C007F0490 /* AppDelegate.m */; };
 		E993A38920301B6C007F0490 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E993A38820301B6C007F0490 /* ViewController.m */; };
 		E993A38C20301B6C007F0490 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E993A38A20301B6C007F0490 /* Main.storyboard */; };
@@ -38,6 +42,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E96642C120413B420000ADF6 /* AdvancedMediaPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdvancedMediaPlayer.h; sourceTree = "<group>"; };
+		E96642C220413B7C0000ADF6 /* VlcPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VlcPlayer.h; sourceTree = "<group>"; };
+		E96642C320413B7C0000ADF6 /* VlcPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VlcPlayer.m; sourceTree = "<group>"; };
+		E96642C520413BD90000ADF6 /* Mp4Player.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mp4Player.h; sourceTree = "<group>"; };
+		E96642C620413BD90000ADF6 /* Mp4Player.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Mp4Player.m; sourceTree = "<group>"; };
+		E96642C820413C260000ADF6 /* MediaAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MediaAdapter.h; sourceTree = "<group>"; };
+		E96642C920413C260000ADF6 /* MediaAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MediaAdapter.m; sourceTree = "<group>"; };
+		E96642CB2041407D0000ADF6 /* AudioPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioPlayer.h; sourceTree = "<group>"; };
+		E96642CC2041407D0000ADF6 /* AudioPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioPlayer.m; sourceTree = "<group>"; };
+		E97215F920413AA50013BB90 /* MediaPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MediaPlayer.h; sourceTree = "<group>"; };
 		E993A38120301B6C007F0490 /* 设计模式.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "设计模式.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E993A38420301B6C007F0490 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E993A38520301B6C007F0490 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -110,6 +124,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E97215F820413A800013BB90 /* 适配器模式 */ = {
+			isa = PBXGroup;
+			children = (
+				E97215F920413AA50013BB90 /* MediaPlayer.h */,
+				E96642C120413B420000ADF6 /* AdvancedMediaPlayer.h */,
+				E96642C220413B7C0000ADF6 /* VlcPlayer.h */,
+				E96642C320413B7C0000ADF6 /* VlcPlayer.m */,
+				E96642C520413BD90000ADF6 /* Mp4Player.h */,
+				E96642C620413BD90000ADF6 /* Mp4Player.m */,
+				E96642C820413C260000ADF6 /* MediaAdapter.h */,
+				E96642C920413C260000ADF6 /* MediaAdapter.m */,
+				E96642CB2041407D0000ADF6 /* AudioPlayer.h */,
+				E96642CC2041407D0000ADF6 /* AudioPlayer.m */,
+			);
+			path = "适配器模式";
+			sourceTree = "<group>";
+		};
 		E993A37820301B6C007F0490 = {
 			isa = PBXGroup;
 			children = (
@@ -129,6 +160,7 @@
 		E993A38320301B6C007F0490 /* 设计模式 */ = {
 			isa = PBXGroup;
 			children = (
+				E97215F820413A800013BB90 /* 适配器模式 */,
 				E9B33C15203FADFF00831BF9 /* 建造者模式 */,
 				E9B33C07203EA2ED00831BF9 /* 抽象工厂模式 */,
 				E9B33BFB203E996A00831BF9 /* 工厂模式 */,
@@ -302,6 +334,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E96642C420413B7C0000ADF6 /* VlcPlayer.m in Sources */,
+				E96642C720413BD90000ADF6 /* Mp4Player.m in Sources */,
 				E9B33C0B203EA31F00831BF9 /* Red.m in Sources */,
 				E9B33C0E203EA35E00831BF9 /* Blue.m in Sources */,
 				E9B33C1A203FAF1E00831BF9 /* Wrapper.m in Sources */,
@@ -313,7 +347,9 @@
 				E9B33C11203EA3AF00831BF9 /* ColorFactory.m in Sources */,
 				E993A3C720302B8E007F0490 /* Germ.m in Sources */,
 				E9B33C2B203FB36E00831BF9 /* ChickenBurger.m in Sources */,
+				E96642CD2041407D0000ADF6 /* AudioPlayer.m in Sources */,
 				E993A38920301B6C007F0490 /* ViewController.m in Sources */,
+				E96642CA20413C260000ADF6 /* MediaAdapter.m in Sources */,
 				E993A39420301B6C007F0490 /* main.m in Sources */,
 				E9B33C2E203FB39B00831BF9 /* Coke.m in Sources */,
 				E9B33C03203E9CF400831BF9 /* Bus.m in Sources */,
