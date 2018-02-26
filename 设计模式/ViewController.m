@@ -17,6 +17,10 @@
 #import "Meal.h"
 #import "AudioPlayer.h"
 
+#import "CircleSuper.h"
+#import "RedCircle.h"
+#import "GreenCircle.h"
+#import "ShapeAbstract.h"
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic, strong)UITableView *tableView;
 
@@ -37,7 +41,8 @@
                    @"工厂模式",
                    @"抽象工厂模式",
                    @"建造者模式",
-                   @"适配器模式"
+                   @"适配器模式",
+                   @"桥接模式"
                    ];
 }
 //数据源方法
@@ -74,6 +79,8 @@
         [self BuilderPattern];
     }else if ([@"适配器模式" isEqualToString:_dataArray[indexPath.row]]){
         [self AdapterPattern];
+    }else if ([@"桥接模式" isEqualToString:_dataArray[indexPath.row]]){
+        [self BridgePattern];
     }
 }
 - (void)facadePattern{
@@ -129,6 +136,15 @@
     [AudioPlayer playWithName:@"alone.mp4" andType:@"mp4"];
     [AudioPlayer playWithName:@"far far away.vlc" andType:@"vlc"];
     [AudioPlayer playWithName:@"mind me.avi" andType:@"avi"];
+}
+-(void)BridgePattern{
+    ShapeAbstract *shape= [[CircleSuper alloc]init];
+    shape.drawApi = [[GreenCircle alloc]init];
+    [shape drawCircleWithRadius:10 pointX:1 pointY:1];
+    
+    shape.drawApi = [[RedCircle alloc]init];
+    [shape drawCircleWithRadius:66 pointX:100 pointY:88];
+    
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

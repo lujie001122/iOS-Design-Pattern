@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E9248F962043AE72005FDA30 /* CircleSuper.m in Sources */ = {isa = PBXBuildFile; fileRef = E9248F952043AE72005FDA30 /* CircleSuper.m */; };
+		E9248F992043B1E0005FDA30 /* ShapeAbstract.m in Sources */ = {isa = PBXBuildFile; fileRef = E9248F982043B1E0005FDA30 /* ShapeAbstract.m */; };
+		E9353B872043A2210048F39F /* RedCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = E9353B862043A2210048F39F /* RedCircle.m */; };
+		E9353B8A2043A2940048F39F /* GreenCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = E9353B892043A2940048F39F /* GreenCircle.m */; };
 		E96642C420413B7C0000ADF6 /* VlcPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = E96642C320413B7C0000ADF6 /* VlcPlayer.m */; };
 		E96642C720413BD90000ADF6 /* Mp4Player.m in Sources */ = {isa = PBXBuildFile; fileRef = E96642C620413BD90000ADF6 /* Mp4Player.m */; };
 		E96642CA20413C260000ADF6 /* MediaAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = E96642C920413C260000ADF6 /* MediaAdapter.m */; };
@@ -42,6 +46,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E9248F942043AE72005FDA30 /* CircleSuper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircleSuper.h; sourceTree = "<group>"; };
+		E9248F952043AE72005FDA30 /* CircleSuper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircleSuper.m; sourceTree = "<group>"; };
+		E9248F972043B1E0005FDA30 /* ShapeAbstract.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShapeAbstract.h; sourceTree = "<group>"; };
+		E9248F982043B1E0005FDA30 /* ShapeAbstract.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShapeAbstract.m; sourceTree = "<group>"; };
+		E9353B842043A1C70048F39F /* DrawAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawAPI.h; sourceTree = "<group>"; };
+		E9353B852043A2210048F39F /* RedCircle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RedCircle.h; sourceTree = "<group>"; };
+		E9353B862043A2210048F39F /* RedCircle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RedCircle.m; sourceTree = "<group>"; };
+		E9353B882043A2940048F39F /* GreenCircle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GreenCircle.h; sourceTree = "<group>"; };
+		E9353B892043A2940048F39F /* GreenCircle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GreenCircle.m; sourceTree = "<group>"; };
 		E96642C120413B420000ADF6 /* AdvancedMediaPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdvancedMediaPlayer.h; sourceTree = "<group>"; };
 		E96642C220413B7C0000ADF6 /* VlcPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VlcPlayer.h; sourceTree = "<group>"; };
 		E96642C320413B7C0000ADF6 /* VlcPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VlcPlayer.m; sourceTree = "<group>"; };
@@ -124,6 +137,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E9353B832043A1A60048F39F /* 桥接模式 */ = {
+			isa = PBXGroup;
+			children = (
+				E9353B842043A1C70048F39F /* DrawAPI.h */,
+				E9353B852043A2210048F39F /* RedCircle.h */,
+				E9353B862043A2210048F39F /* RedCircle.m */,
+				E9353B882043A2940048F39F /* GreenCircle.h */,
+				E9353B892043A2940048F39F /* GreenCircle.m */,
+				E9248F972043B1E0005FDA30 /* ShapeAbstract.h */,
+				E9248F982043B1E0005FDA30 /* ShapeAbstract.m */,
+				E9248F942043AE72005FDA30 /* CircleSuper.h */,
+				E9248F952043AE72005FDA30 /* CircleSuper.m */,
+			);
+			path = "桥接模式";
+			sourceTree = "<group>";
+		};
 		E97215F820413A800013BB90 /* 适配器模式 */ = {
 			isa = PBXGroup;
 			children = (
@@ -160,6 +189,7 @@
 		E993A38320301B6C007F0490 /* 设计模式 */ = {
 			isa = PBXGroup;
 			children = (
+				E9353B832043A1A60048F39F /* 桥接模式 */,
 				E97215F820413A800013BB90 /* 适配器模式 */,
 				E9B33C15203FADFF00831BF9 /* 建造者模式 */,
 				E9B33C07203EA2ED00831BF9 /* 抽象工厂模式 */,
@@ -340,6 +370,7 @@
 				E9B33C0E203EA35E00831BF9 /* Blue.m in Sources */,
 				E9B33C1A203FAF1E00831BF9 /* Wrapper.m in Sources */,
 				E9B33C14203EA42300831BF9 /* AbstractFactory.m in Sources */,
+				E9248F962043AE72005FDA30 /* CircleSuper.m in Sources */,
 				E993A3C420302B8E007F0490 /* Circle.m in Sources */,
 				E993A3C520302B8E007F0490 /* ShapeManager.m in Sources */,
 				E993A3C620302B8E007F0490 /* Square.m in Sources */,
@@ -348,6 +379,7 @@
 				E993A3C720302B8E007F0490 /* Germ.m in Sources */,
 				E9B33C2B203FB36E00831BF9 /* ChickenBurger.m in Sources */,
 				E96642CD2041407D0000ADF6 /* AudioPlayer.m in Sources */,
+				E9248F992043B1E0005FDA30 /* ShapeAbstract.m in Sources */,
 				E993A38920301B6C007F0490 /* ViewController.m in Sources */,
 				E96642CA20413C260000ADF6 /* MediaAdapter.m in Sources */,
 				E993A39420301B6C007F0490 /* main.m in Sources */,
@@ -355,12 +387,14 @@
 				E9B33C03203E9CF400831BF9 /* Bus.m in Sources */,
 				E9B33C31203FB3B300831BF9 /* Pepsi.m in Sources */,
 				E9B33C3A203FB81900831BF9 /* MealBuilder.m in Sources */,
+				E9353B8A2043A2940048F39F /* GreenCircle.m in Sources */,
 				E9B33C06203E9D3F00831BF9 /* CarFactory.m in Sources */,
 				E9B33C34203FB3F800831BF9 /* Meal.m in Sources */,
 				E9B33C1D203FB00500831BF9 /* Bottle.m in Sources */,
 				E9B33C25203FB2C300831BF9 /* ColdDrink.m in Sources */,
 				E9B33C20203FB05300831BF9 /* Burger.m in Sources */,
 				E9B33C00203E9CB600831BF9 /* SUV.m in Sources */,
+				E9353B872043A2210048F39F /* RedCircle.m in Sources */,
 				E993A38620301B6C007F0490 /* AppDelegate.m in Sources */,
 				E9B33C37203FB5E100831BF9 /* ItemBase.m in Sources */,
 			);
