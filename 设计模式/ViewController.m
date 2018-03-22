@@ -21,6 +21,9 @@
 #import "RedCircle.h"
 #import "GreenCircle.h"
 #import "ShapeAbstract.h"
+
+#import "Employee.h"
+
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic, strong)UITableView *tableView;
 
@@ -42,7 +45,8 @@
                    @"抽象工厂模式",
                    @"建造者模式",
                    @"适配器模式",
-                   @"桥接模式"
+                   @"桥接模式",
+                   @"组合模式"
                    ];
 }
 //数据源方法
@@ -81,6 +85,8 @@
         [self AdapterPattern];
     }else if ([@"桥接模式" isEqualToString:_dataArray[indexPath.row]]){
         [self BridgePattern];
+    }else if ([@"组合模式" isEqualToString:_dataArray[indexPath.row]]){
+        [self CompositePattern];
     }
 }
 - (void)facadePattern{
@@ -145,6 +151,33 @@
     shape.drawApi = [[RedCircle alloc]init];
     [shape drawCircleWithRadius:66 pointX:100 pointY:88];
     
+}
+-(void)CompositePattern{
+    Employee *CEO = [Employee employeeWithName:@"John" dept:@"CEO" salary:3000];
+    Employee *headSales = [Employee employeeWithName:@"Robert" dept:@"Head Sales" salary:20000];
+    Employee *headMarketing = [Employee employeeWithName:@"Michel" dept:@"Head Marketing" salary:20001];
+    
+    Employee *clerk1 = [Employee employeeWithName:@"Laura" dept:@"Marketing" salary:10000];
+    Employee *clerk2 = [Employee employeeWithName:@"Bob" dept:@"Marketing" salary:10000];
+    
+    Employee *salesExecutive1 = [Employee employeeWithName:@"Richard" dept:@"Sales" salary:10000];
+    Employee *salesExecutive2 = [Employee employeeWithName:@"Rob" dept:@"Sales" salary:10000];
+    [CEO add:headSales];
+    [CEO add:headMarketing];
+    
+    [headSales add:salesExecutive1];
+    [headSales add:salesExecutive2];
+    
+    [headMarketing add:clerk1];
+    [headMarketing add:clerk2];
+    
+    NSLog(@"%@",CEO);
+    for (Employee *e in CEO.subordinates) {
+        NSLog(@"%@",e);
+        for (Employee *emplyee in e.subordinates) {
+            NSLog(@"%@",emplyee);
+        }
+    }
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

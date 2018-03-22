@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		E9248F962043AE72005FDA30 /* CircleSuper.m in Sources */ = {isa = PBXBuildFile; fileRef = E9248F952043AE72005FDA30 /* CircleSuper.m */; };
 		E9248F992043B1E0005FDA30 /* ShapeAbstract.m in Sources */ = {isa = PBXBuildFile; fileRef = E9248F982043B1E0005FDA30 /* ShapeAbstract.m */; };
+		E9265D5F20639C7F001BC908 /* Employee.m in Sources */ = {isa = PBXBuildFile; fileRef = E9265D5E20639C7F001BC908 /* Employee.m */; };
 		E9353B872043A2210048F39F /* RedCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = E9353B862043A2210048F39F /* RedCircle.m */; };
 		E9353B8A2043A2940048F39F /* GreenCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = E9353B892043A2940048F39F /* GreenCircle.m */; };
 		E96642C420413B7C0000ADF6 /* VlcPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = E96642C320413B7C0000ADF6 /* VlcPlayer.m */; };
@@ -50,6 +51,8 @@
 		E9248F952043AE72005FDA30 /* CircleSuper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircleSuper.m; sourceTree = "<group>"; };
 		E9248F972043B1E0005FDA30 /* ShapeAbstract.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShapeAbstract.h; sourceTree = "<group>"; };
 		E9248F982043B1E0005FDA30 /* ShapeAbstract.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShapeAbstract.m; sourceTree = "<group>"; };
+		E9265D5D20639C7F001BC908 /* Employee.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Employee.h; sourceTree = "<group>"; };
+		E9265D5E20639C7F001BC908 /* Employee.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Employee.m; sourceTree = "<group>"; };
 		E9353B842043A1C70048F39F /* DrawAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawAPI.h; sourceTree = "<group>"; };
 		E9353B852043A2210048F39F /* RedCircle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RedCircle.h; sourceTree = "<group>"; };
 		E9353B862043A2210048F39F /* RedCircle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RedCircle.m; sourceTree = "<group>"; };
@@ -137,6 +140,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E9265D5C20639C68001BC908 /* 组合模式 */ = {
+			isa = PBXGroup;
+			children = (
+				E9265D5D20639C7F001BC908 /* Employee.h */,
+				E9265D5E20639C7F001BC908 /* Employee.m */,
+			);
+			path = "组合模式";
+			sourceTree = "<group>";
+		};
 		E9353B832043A1A60048F39F /* 桥接模式 */ = {
 			isa = PBXGroup;
 			children = (
@@ -189,6 +201,7 @@
 		E993A38320301B6C007F0490 /* 设计模式 */ = {
 			isa = PBXGroup;
 			children = (
+				E9265D5C20639C68001BC908 /* 组合模式 */,
 				E9353B832043A1A60048F39F /* 桥接模式 */,
 				E97215F820413A800013BB90 /* 适配器模式 */,
 				E9B33C15203FADFF00831BF9 /* 建造者模式 */,
@@ -381,6 +394,7 @@
 				E96642CD2041407D0000ADF6 /* AudioPlayer.m in Sources */,
 				E9248F992043B1E0005FDA30 /* ShapeAbstract.m in Sources */,
 				E993A38920301B6C007F0490 /* ViewController.m in Sources */,
+				E9265D5F20639C7F001BC908 /* Employee.m in Sources */,
 				E96642CA20413C260000ADF6 /* MediaAdapter.m in Sources */,
 				E993A39420301B6C007F0490 /* main.m in Sources */,
 				E9B33C2E203FB39B00831BF9 /* Coke.m in Sources */,
